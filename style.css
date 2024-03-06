@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #154c79;
+}
+
+main{
+   padding: 50px;
+}
+
+.gridContainer_Center{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.calculadora{
+    height: 800px;
+    width: 500px;
+    padding: 8%;
+    border-radius: 2%;
+    background-color: #063970;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    gap: 10px;
+    box-shadow: 5px 5px 10px 2px;
+    
+
+}
+.screenContainer{
+    background-color:#155679;
+    border-radius: 2%;
+    margin-bottom: 5px;
+    display: grid;
+    align-items: end;
+    justify-items: end;
+    width: auto;
+    box-shadow: 2px 2px 15px inset;
+    
+}
+#screen{
+    color: aliceblue;
+    font-size: 60px;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    max-width:480px; 
+    word-wrap: break-word;
+    text-align-last: right;
+}
+.buttonsContainer{
+    display: grid;
+    gap: 2px;
+}
+
+.twoColumns{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 2px;
+}
+.oneRowsFourColumns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.twoRowsthreeColumns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+.twoRowsFourColumns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    
+}
+.button{
+    border-radius: 20%;
+    font-size: 200%;
+    height: 109px;
+    
+}
+
+#equalButton{
+    height: 220px;
+}

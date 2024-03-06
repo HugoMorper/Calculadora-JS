@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="gridContainer_Center">
+            <div class="calculadora">
+                <div class="screenContainer" id="screenContainer">
+                    <p id="screen">1</p>
+                </div>    
+                    <section class="buttonsContainer">
+                        <div class="oneRowsFourColumns">
+                            <button class="button" onclick="getOperator(this.value)" value="*">x</button>
+                            <button class="button" onclick="getOperator(this.value)" value="/">/</button>
+                            <button class="button" onclick="reset()">C</button>
+                            <button class="button" onclick="eraseValue()">B</button>
+                        </div>
+                        <div class="twoRowsFourColumns">
+                            <button class="button" onclick="getValue(this.value)" value="9">9</button>
+                            <button class="button" onclick="getValue(this.value)" value="8">8</button>
+                            <button class="button" onclick="getValue(this.value)" value="7">7</button>
+                            <button class="button" onclick="getOperator(this.value)" value="-">-</button>
+                            <button class="button" onclick="getValue(this.value)" value="6">6</button>
+                            <button class="button" onclick="getValue(this.value)" value="5">5</button>
+                            <button class="button" onclick="getValue(this.value)" value="4">4</button>
+                            <button class="button" onclick="getOperator(this.value)" value="+">+</button>
+                        </div>
+                        <div class="twoColumns">
+                            <div class="twoRowsthreeColumns">
+                                <button class="button" onclick="getValue(this.value)" value="3">3</button>
+                                <button class="button" onclick="getValue(this.value)" value="2">2</button>
+                                <button class="button" onclick="getValue(this.value)" value="1">1</button>
+                                <button class="button" onclick="getValue(this.value)" value="0">0</button>
+                                <button class="button" onclick="getOperator(this.value)" value="%">%</button>
+                                <button class="button" onclick="getOperator(this.value)" value=".">.</button>
+                            </div>
+                            <button class="button" id="equalButton" onclick="equal()">=</button>     
+                        </div>
+                        
+                    </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+  
+    </footer>
+    <script src="calculadora.js"></script>
+</body>
+</html>
